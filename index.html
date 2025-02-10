@@ -12,6 +12,11 @@
     <p id="result"></p>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Set default date to 11-05-2001 (YYYY-MM-DD format)
+            document.getElementById("birthday").value = "2001-05-11";
+        });
+
         function calculateDays() {
             const birthdayInput = document.getElementById("birthday").value;
             if (!birthdayInput) {
